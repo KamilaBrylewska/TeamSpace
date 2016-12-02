@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+    <html>
+    <head>
+    <title>Team Space</title>
+      <meta charset="UTF-8" />
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+        <link href='https://fonts.googleapis.com/css?family=Oswald|Righteous|Open+Sans&subset=latin-ext' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" type="text/css" href="../stylesheets/basic.css" />
+   
+        <script src="../javascripts/NoteHelper.js"></script> 
+        <script src="../javascripts/ActionsOnLoad.js" defer></script> 
+    </head>
+    <body>
+        <div class="board">
+            <div>
+                <h1>Team</h1>
+                <h2>Space<i class="fa fa-plus add"></i></h2>
+            </div>
+            
+            @html.block("body")
+
+        </div>
+    <form class="create-note-popup" id="create-popup"  action="/add" method="post">
+        <i class="fa fa-times delete"></i>
+        <h3>New note</h3>
+        <input id="name" type="text" value="Name" name="title"/>
+        <textarea type="text" value="Text message" class="title" name="content"> </textarea>
+        <input id="author" type="text" value="Author" name="author" />
+        <input type="submit" id="send" value="Send">
+       
+    </form>
+     </body>
+    </html>

@@ -1,0 +1,17 @@
+﻿
+@html.extend("layout", function(model)
+{
+    @html.block("body", function(model)
+    {
+		
+        @for (i=0;i < model.notes.length; i++) {
+            <div class="note-contener">
+                <h3>@model.notes[i].title</h3>
+                <a href="delete/@model.notes[i].id"><i class="fa fa-times delete"></i></a>
+                <p>
+                    @model.notes[i].content </p>
+                <h5>@model.notes[i].author </h5>
+             </div>
+        }
+    })
+})

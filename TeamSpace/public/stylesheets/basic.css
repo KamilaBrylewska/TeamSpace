@@ -1,0 +1,175 @@
+﻿body {
+    background-color: rgb(205,220,57);
+    background-image: url("../images/tile.jpg");
+    color: rgb(33, 33, 33);
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    position: relative;
+ 
+}
+ h1 {
+     font-family: 'Oswald', sans-serif;
+     font-size: 90px;
+     text-align: center;
+     margin: 0px;
+     text-transform: uppercase;
+     color: rgb(230,230,230);
+     flex: 2;
+ }
+
+ h2 {
+     
+     font-family: 'Righteous', cursive;
+     font-size: 54px;
+     text-align: center;
+     flex: 2;
+     margin: 0px;
+     margin-top: -20px;
+     color: rgb(230,230,230);
+     text-transform: uppercase;
+ }
+
+ @keyframes biger {
+    0% {font-size: 54px;}
+    50% {font-size: 35px;}
+    100% {font-size: 55px;}
+}
+
+ h2 > * {
+     animation: biger 5s infinite;
+     cursor: pointer;
+ }
+
+ h5 {
+     font-weight: lighter;
+     text-align: right;
+     margin: 10px;
+
+ }
+ .board {
+        display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+     justify-content: space-around;
+     align-content: flex-start;
+     align-items: center;
+     height: 97vh;
+ }
+ .board > * {
+     flex: 2;
+    width: 300px;
+
+ }
+ .note-contener {
+     background-color: rgb(236,240,241);
+    flex: 2;
+    width: 300px;
+     position: relative;
+     border-radius: 10px;
+     box-shadow: 2px 2px 2px rgba(0,0,0,.10);
+     padding: 10px;
+     margin: 15px;
+     font-family: 'Open Sans', sans-serif;
+ }
+
+ .note-contener p {
+     padding: 0px;
+     margin:0px;
+ }
+ .note-contener h3 {
+  
+    margin: 0px;
+     padding: 0px 0px 10px 0px;
+
+ }
+  .note-contener .delete {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      left: auto;
+      bottom: auto;
+  }
+
+  .create-note-popup {
+      background-color: rgb(255,255,255);
+      transition: all 1s;
+      box-shadow: 4px 4px 2px rgba(0,0,0,.8);
+      width: 400px;
+      height: 555px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 5% auto;
+      border-radius: 10px;
+      box-shadow: 5px 5px 4px rgba(0,0,0,.02),
+          -5px -5px 4px rgba(0,0,0,.02);
+    
+  }
+  .create-note-popup h3 {
+       font-family: 'Open Sans', sans-serif;
+       font-weight: 300;
+       font-size: 22px;
+  }
+  .create-note-popup input, .create-note-popup textarea {
+      margin: 10px;
+      padding: 5px 10px 5px 10px;
+       font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+      display: block;
+      width: 360px;
+      border-radius: 99px;
+      border: 1px solid rgb(182,182,182);
+      
+
+  }
+  .create-note-popup textarea {
+
+      border-radius: 30px;
+      padding: 10px 10px 10px 10px;
+      resize: none;
+      overflow: hidden;	
+      height: 300px;
+  }
+  .create-note-popup #send {
+       margin: 10px;
+      padding: 5px 10px 5px 10px;
+      background-color: rgb(240,244,195) ;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+      cursor: pointer;
+      width: 380px;
+      border-radius: 99px;
+      border: 0px solid rgb(182,182,182);
+      
+
+  }
+  .create-note-popup #send:hover {
+      background-color: rgb(255,152,0);
+      color: rgb(255,255,255);
+  }
+
+  .create-note-popup .delete {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      left: auto;
+      bottom: auto;
+  }
+
+  /* action klas */
+  .size-none {
+      border: 1px solid rgba(0,0,0,0) !important;
+      transition: all 1s;
+      width: 0px !important;
+      height: 0px !important;
+      background-color: rgba(255,255,255,0) !important;
+  }
+
+  .display-none {
+      display: none;
+  }
