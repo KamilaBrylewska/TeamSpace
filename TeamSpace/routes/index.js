@@ -8,9 +8,7 @@ router.use(bodyParser.urlencoded({ extended: true })); // for parsing applicatio
 /* GET home page. */
 
 router.get('/', function (req, res) {
-   
    var notes = Database.getAllNotes(res);
- 
 });
 
 router.post('/add', function (req, res) {   
