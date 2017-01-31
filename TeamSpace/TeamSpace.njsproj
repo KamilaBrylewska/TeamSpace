@@ -33,10 +33,9 @@
     <Compile Include="app.js" />
     <Compile Include="public\javascripts\ActionsOnLoad.js" />
     <Compile Include="Database\Database.js" />
-    <Compile Include="Database\Models.js" />
+    <Compile Include="public\javascripts\Models.js" />
     <Compile Include="public\javascripts\NoteHelper.js" />
     <Compile Include="routes\index.js" />
-    <Compile Include="routes\users.js" />
     <Compile Include="bin\www" />
     <Content Include="package.json" />
     <Content Include="public\images\tile.jpg" />

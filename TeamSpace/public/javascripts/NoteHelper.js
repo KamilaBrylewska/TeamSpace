@@ -1,9 +1,4 @@
-﻿var Note = function () {
-    this.title = "Title";
-    this.content = "content";
-    this.author = "GalAnonim";
-}
-
+﻿
 var NoteHelper = {
     numberOfNotes: 0,
     createNote: function () {
@@ -51,30 +46,7 @@ var NoteHelper = {
     },
     displayNone: function (element) {
         element.style.display = "none";
-    }, 
-    collectForm: function (ContenerId) {
-        var i;
-        var values = [];
-        var contener = document.getElementById(ContenerId).childNodes;
-        for (i = 0; i < contener.length; i++) {
-            if (contener[i].nodeName == "INPUT" || contener[i].nodeName == "TEXTAREA") {
-                
-                //contener[i].innerHtml;
-                console.log(contener[i].value);
-                values.push(contener[i].value);
-            }
-          
-        }
-        return values;
     },
-    ArrayToNote: function (arrayOfData) {
-        NoteHelper.collectForm();
-        var Notes = new Note();
-        Notes.title = arrayOfData[0];
-        Notes.content = arrayOfData[1];
-        Notes.author = arrayOfData[2];
-        return Notes;
 
-    }
 }
 

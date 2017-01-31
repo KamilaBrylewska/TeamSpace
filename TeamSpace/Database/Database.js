@@ -1,6 +1,6 @@
 ﻿var sqlite3 = require('sqlite3').verbose(),
-db = new sqlite3.Database('notes.db');
-var Note = require("./Models.js");
+    db = new sqlite3.Database('notes.db');
+var Note = require("../public/javascripts/Models.js");
 var underscore = require("underscore");
 var Database = {
     
